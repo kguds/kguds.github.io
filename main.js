@@ -1,9 +1,22 @@
 var cookies = 0;
 
+var save = {
+    cookies: cookies,
+    cursors: cursors,
+    prestige: prestige
+}
+
+var savegame = JSON.parse(localStorage.getItem("save"));
+if (typeof savegame.cookies !== "undefined") cookies = savegame.cookies;
+
 function cookieClick(number){
     cookies = cookies + number;
     document.getElementById("cookies").innerHTML = cookies;
 };
+
+function save(){
+    localStorage.setItem("save",JSON.stringify(save));
+}
 
 var cursors = 0;
 
