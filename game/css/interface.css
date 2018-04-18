@@ -22,13 +22,13 @@
 }
 .main {
     max-width: 500px;
-    margin: auto;
-    background: EFECCA;
+    margin: 30px;
+    background: #EFECCA;
     padding: 10px;
 }
 
 body {
-    background-color: A7A37E;
+    background-color: #A7A37E;
     margin:0;
 }
 
