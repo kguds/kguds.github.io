@@ -1,6 +1,6 @@
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #002F2F;
   position: fixed;
   top: 0;
   width: 100%;
@@ -23,24 +23,24 @@
 .main {
     max-width: 500px;
     margin: auto;
-    background: lightblue;
+    background: EFECCA;
     padding: 10px;
 }
 
 body {
-    background-color: purple;
+    background-color: A7A37E;
     margin:0;
 }
 
 h1 {
-    color: navy;
+    color: 002F2F;
     margin-left: 20px;
 }
 
 .button {
-    background-color: #4CAF50;
+    background-color: #E6E2AF;
     border: none;
-    color: white;
+    color: 002F2F;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
