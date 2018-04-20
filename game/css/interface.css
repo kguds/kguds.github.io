@@ -21,7 +21,20 @@
   color: #A7A37E;
 }
 .main {
+	width: 80%;
     max-width: 500px;
+    margin: auto;
+    padding: 10px;
+}
+.buttons{
+	width: 40%;
+    margin: 30px;
+    background: #EFECCA;
+    padding: 10px;
+	float:left;
+}
+.card{
+	margin-left: 40%;
     margin: 30px;
     background: #EFECCA;
     padding: 10px;

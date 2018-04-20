@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/interface.css" />
+		   
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
@@ -9,20 +10,27 @@
 		  <a href="#shop">Shop</a>
 		  <a href="#map">Map</a>
 		</div>
-		<div class="main">
-			<h1>Rares: <span id="cookies">0</span> </h1>
-			<button class="button" onclick="cookieClick(1)">Crack a pack!</button>
-			<br />
-			<button class="button" onclick="buyCursor()">Hire a friend!</button>
-			<br />
-			<h1>Friends Crackin: <span id="cursors">0</span></h1>
-			<br />
-			Cursor Cost: <span id="cursorCost">10</span>
-			<br />
-			<button class="button" onclick="save()">Save</button>
-			<br />
-			<script type="text/javascript" src="main.js"></script>
-			</p>
-		</div>
+		<section class="main">
+			<div class="buttons">
+				<h1>Rares: <span id="cookies">0</span> </h1>
+				<button class="button" onclick="cookieClick(1)">Crack a pack!</button>
+				<br />
+				<button class="button" onclick="buyCursor()">Hire a friend!</button>
+				<br />
+				<h1>Friends Crackin: <span id="cursors">0</span></h1>
+				<br />
+				Cursor Cost: <span id="cursorCost">10</span>
+				<br />
+				<button class="button" onclick="save()">Save</button>
+				<br />
+				<script type="text/javascript" src="main.js"></script>
+				<script type="text/javascrip" src="res/words.json" ></script>
+	
+			</div>
+			<div class="card">
+		
+				<h1> Card name: <span id="cardText">"Test"</span></h1>
+			</div>
+		</section>
 	</body>
 </html>
