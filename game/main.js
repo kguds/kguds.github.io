@@ -1,4 +1,6 @@
 var cookies = 0;
+var cursors = 0;
+var presige = 0;
 
 var save = {
     cookies: cookies,
@@ -28,9 +30,9 @@ function buyCursor(){
     	cookies = cookies - cursorCost;                          //removes the cookies spent
         document.getElementById('cursors').innerHTML = cursors;  //updates the number of cursors for the user
         document.getElementById('cookies').innerHTML = cookies;  //updates the number of cookies for the user
+    	var nextCost = Math.floor(10 * Math.pow(1.1,cursors));       //works out the cost of the next cursor
+    	document.getElementById('cursorCost').innerHTML = nextCost;  //updates the cursor cost for the user	
     };
-    var nextCost = Math.floor(10 * Math.pow(1.1,cursors));       //works out the cost of the next cursor
-    document.getElementById('cursorCost').innerHTML = nextCost;  //updates the cursor cost for the user
 };
 
 function capFirst(string) {
