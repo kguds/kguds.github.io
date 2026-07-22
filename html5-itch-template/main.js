@@ -44,11 +44,10 @@ window.addEventListener('touchstart', unlockAudio);
 // Boot sequence: Preload assets first, then start loop
 async function boot() {
   try {
-    // Queue images and sound files here as needed:
-    // await Promise.all([
-    //   assets.loadImage('player', 'assets/player.png'),
-    //   sounds.loadSound('jump', 'assets/jump.wav')
-    // ]);
+       await Promise.all([
+       assets.loadImage('player', 'assets/emerald_01.png'),
+       sounds.loadSound('jump', 'assets/Spell - Fireball 2.mp3')
+     ]);
 
     isLoaded = true;
     requestAnimationFrame(gameLoop);
@@ -90,7 +89,7 @@ function render() {
 
   ctx.fillStyle = '#ffffff';
   ctx.font = '20px sans-serif';
-  ctx.fillText('Ready for development...', 20, 40);
+  ctx.fillText('Theme: Countdown', 20, 40);
 
   ctx.restore();
 }
